@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imgGoods"
-        android:layout_width="86dp"
-        android:layout_height="75dp"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,33 +20,35 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:text="Ca nau lau"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintBottom_toTopOf="@+id/tvShopName"
         app:layout_constraintStart_toEndOf="@+id/imgGoods"
-        app:layout_constraintTop_toTopOf="@+id/imgGoods" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
 
     <TextView
         android:id="@+id/tvShopName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGoods"
         app:layout_constraintStart_toEndOf="@+id/imgGoods"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:backgroundTint="#812222"
         android:text="CHAT"
-        app:layout_constraintBottom_toBottomOf="@+id/imgGoods"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgGoods"
-        app:layout_constraintVertical_bias="0.444" />
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
