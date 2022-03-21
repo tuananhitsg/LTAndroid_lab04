@@ -50,9 +50,9 @@ public class CustomGoodsAdapter extends BaseAdapter {
             view = LayoutInflater.from(viewGroup.getContext()).inflate(layoutItem, viewGroup, false);
         }
 
-        TextView tvName = view.findViewById(R.id.tvName);
-        TextView tvShopName = view.findViewById(R.id.tvShopName);
-        ImageView imgGoods = view.findViewById(R.id.imgGoods);
+        TextView tvName = view.findViewById(R.id.item_lv_tvName);
+        TextView tvShopName = view.findViewById(R.id.item_lv_tvShopName);
+        ImageView imgGoods = view.findViewById(R.id.item_lv_logo);
         final Goods goods = goodsList.get(i);
 
         if(goodsList !=null && !goodsList.isEmpty()){
