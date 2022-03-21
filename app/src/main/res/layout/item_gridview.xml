@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_gv_logo"
+        android:layout_width="168dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="79dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/item_gv_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_gv_logo" />
+
+    <TextView
+        android:id="@+id/item_gv_tvVoteCounting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="4dp"
+        android:text="(15)"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/item_gv_ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/item_gv_tvName" />
+
+    <RatingBar
+        android:id="@+id/item_gv_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:numStars="5"
+        android:progressTint="@color/yellow"
+        android:rating="4"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:stepSize="0.5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_gv_tvName"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/item_gv_tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="100.000đ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/item_gv_tvName"
+        app:layout_constraintTop_toBottomOf="@+id/item_gv_tvName" />
+
+    <TextView
+        android:id="@+id/item_gv_tvDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="-100%"
+        app:layout_constraintBottom_toBottomOf="@+id/item_gv_tvPrice"
+        app:layout_constraintStart_toEndOf="@+id/item_gv_tvPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

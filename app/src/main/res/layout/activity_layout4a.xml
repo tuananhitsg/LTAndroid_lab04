@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/C4C4C4"
     tools:context=".Layout4aActivity">
 
 
     <View
-        android:id="@+id/view_navbar_top"
+        android:id="@+id/layout4a_view_navbar_top"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:background="#1BA9FF"
@@ -18,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view_navbar_bottom"
+        android:id="@+id/layout4a_view_navbar_bottom"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:background="#1BA9FF"
@@ -28,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_navbar_top"
+        android:id="@+id/layout4a_tv_navbar_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CHAT"
@@ -36,16 +37,16 @@
         android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toStartOf="@+id/layout4a_btnCart"
-        app:layout_constraintStart_toEndOf="@+id/layout4a_btnBackTop"
+        app:layout_constraintStart_toEndOf="@+id/layout4a_btnBack_top"
         tools:layout_editor_absoluteY="13dp" />
 
     <ImageButton
-        android:id="@+id/layout4a_btnBackTop"
+        android:id="@+id/layout4a_btnBack_top"
         android:layout_width="42dp"
         android:layout_height="42dp"
         android:layout_marginBottom="4dp"
         android:background="#1BA9FF"
-        app:layout_constraintBottom_toBottomOf="@+id/view_navbar_top"
+        app:layout_constraintBottom_toBottomOf="@+id/layout4a_view_navbar_top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -57,7 +58,7 @@
         android:layout_height="42dp"
         android:layout_marginBottom="4dp"
         android:background="#1BA9FF"
-        app:layout_constraintBottom_toBottomOf="@+id/view_navbar_top"
+        app:layout_constraintBottom_toBottomOf="@+id/layout4a_view_navbar_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -75,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_navbar_top"
+        app:layout_constraintTop_toBottomOf="@+id/layout4a_view_navbar_top"
         app:layout_constraintVertical_bias="0.0" />
 
     <ListView
@@ -83,10 +84,10 @@
         android:layout_width="wrap_content"
         android:layout_height="740dp"
         android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/view_navbar_bottom"
+        app:layout_constraintBottom_toTopOf="@+id/layout4a_view_navbar_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_navbar_top"
+        app:layout_constraintTop_toBottomOf="@+id/layout4a_view_navbar_top"
         app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

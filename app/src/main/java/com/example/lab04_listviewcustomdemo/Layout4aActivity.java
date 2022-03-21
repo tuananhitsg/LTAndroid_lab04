@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.lab04_listviewcustomdemo.adapter.CustomGoodsAdapter;
+import com.example.lab04_listviewcustomdemo.adapter.CustomGoodsAdapterLv;
 import com.example.lab04_listviewcustomdemo.model.Goods;
 
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ public class Layout4aActivity extends AppCompatActivity {
         goodsList.add(new Goods("Hiếu lòng con trẻ", "Minh Long Book", "hieu_long_con_tre"));
         goodsList.add(new Goods("Donald Trump Thiên tài lãnh đạo", "Minh Long Book", "trump_1"));
 
-        CustomGoodsAdapter adapter =new CustomGoodsAdapter(this, R.layout.item_listview,goodsList);
+        CustomGoodsAdapterLv adapter =new CustomGoodsAdapterLv(this, R.layout.item_listview,goodsList);
         listView.setAdapter(adapter);
     }
 }

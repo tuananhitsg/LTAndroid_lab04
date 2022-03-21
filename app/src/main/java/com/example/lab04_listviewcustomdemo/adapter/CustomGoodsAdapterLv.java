@@ -13,13 +13,13 @@ import com.example.lab04_listviewcustomdemo.R;
 
 import java.util.ArrayList;
 
-public class CustomGoodsAdapter extends BaseAdapter {
+public class CustomGoodsAdapterLv extends BaseAdapter {
 
     private Context ctx;
     private int layoutItem;
     private ArrayList<Goods> goodsList;
 
-    public CustomGoodsAdapter(Context ctx, int layoutItem, ArrayList<Goods> goodsList) {
+    public CustomGoodsAdapterLv(Context ctx, int layoutItem, ArrayList<Goods> goodsList) {
         this.ctx = ctx;
         this.layoutItem = layoutItem;
         this.goodsList = goodsList;
